@@ -55,6 +55,8 @@ run
 ./autogen.sh && ./configure && make
 ```
 
+This fork takes into account the changes made in GCC 10, where the default build option used -fno-common, instead of previous versions where -fcommon was the default. Previously, building this project on GCC 10 would throw "multiple definition" errors due to the way Dev_Random was defined.
+
 ### USE AT YOUR OWN RISK. I DENY RESPONSIBILITY FOR:
 * Spontaneous hairy nose
 * Micropenis
